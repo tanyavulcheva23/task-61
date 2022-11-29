@@ -1,5 +1,10 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
+  const hotClass = document.querySelectorAll('.hot');
+  hotClass.forEach(product => {
+    product.textContent += '🔥';
+  });
 });
+
+
